@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="bookDeposit.css">
+    </head>
+    
+    <body id="withdrawal">
+        <fieldset >
+            <legend><b><h3>Book Deposit</h3></b></legend>
+            <div >
+                <!-- <div id="bookName"> -->
+                    <label style="margin-right: 30px;"for="studentName"><b>Student's Name</b></label>
+                    <input style="margin-right: 50px;"type="text" name="studentName">
+                    <label style="margin-right: 30px;"for="scholarNo"><b>Scholar Id</b></label>
+                    <input style="margin-right: 50px;"type="text" name="scholarId">
+                    <label style="margin-right: 20px;"for="contactNo"><b>Contact No.</b></label>
+                    <input style="margin-right: 20px;"type="text" name="contactNo">
+                    <label style="margin-right: 30px;"for="bookName"><b>Book Name</b></label>
+                    <input style="margin-right: 10px;"type="text" name="bookName">
+                 <!-- </div> -->
+                 <!-- <div id="authorName"> --><br>
+                     <label style="margin-right: 30px;margin-top: 15px;"for="authorName"><b>Author Name</b></label>
+                     <input style="margin-right: 60px;margin-top: 15px;" type="text" name="authorName">
+                  <!-- </div> -->
+                  <label style="margin-right: 20px;"for="category"><b>Category</b></label>    
+                            <select style="margin-right: 50px;" name="" id="category">
+                                <option value="computerScience" id="computerScience">Computer Science</option>
+                                <option value="novel" id="novel">Novel</option>
+                                <option value="historical" id="historical">Historical</option>
+                                <option value="architectral" id="architectral">Architectral</option>
+                                <option value="medicalScience" id="medicalScience">Medical Science</option>
+                                <option value="darama" id="drama">Drama</option>
+                                <option value="poetry" id="poetry">Poetry</option>
+                                <option value="others" id="others">Others</option>
+    
+                            </select>
+                            
+                    <label for="doi"style="margin-right: 30px;" ><b>Date of Deposit</b></label>
+                    <input type="date"  name = "doi" reqiured>
+                    <label style="margin-left: 20px;margin-top: 15px;margin-right: 30px;"for="isbn"><b>ISBN Number</b></label>    
+                    <input  style="margin-right: 20px;margin-top: 15px;"type="text" class="isbn" id="isbn" name = "ISBN Number" reqiured>
+            </div>  <br>   
+            <div id="button">
+                <input  id ="btn1" type = "submit" onclick="input()" value="Submit">
+                <input id="btn2" type ="submit" onclick="Clear()" value="Clear">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Book Deposit Table</h3></legend>
+            <table id="depositTable">
+                <tr>
+                    <th>S No.</th>
+                    <th>Student's Name</th>
+                    <th>Scholar ID</th>
+                    <th>Contact No.</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Category</th>
+                    <th>Date of Deposit</th>
+                    <th>ISBN Number</th>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+        
+
+</html>

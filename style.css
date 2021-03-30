@@ -1,0 +1,82 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color:cornsilk;
+}
+/*Navbar style*/
+#navbar{
+    display:flex;
+    align-items: center;
+    content: none;
+    /* width: 100; */
+    /* height:50%; */
+    position: relative;
+    background-color:cyan;
+    color: white;
+}
+#navbar ul {
+    display: flex;
+}
+ #navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#logo
+{
+    width:auto;
+    height:auto;
+    float:left;
+
+}
+ #home 
+{
+    display: felx;
+    flex-direction: column;
+
+}
+#home::before
+{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    background: url('./library1.jpg') no-repeat center center/cover;
+}
+#home {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+ iframe{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
